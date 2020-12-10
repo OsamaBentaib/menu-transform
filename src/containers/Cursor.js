@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useMousePosition } from "./../hooks";
 import { useAppState } from "./../context/Context";
 import { gsap } from "gsap";
-import { lerp } from "./../utils";
 
 export default function Cursor() {
   const mouse = useMousePosition();
@@ -10,9 +9,11 @@ export default function Cursor() {
   const { hover } = useAppState();
   useEffect(() => {
     hoverRender(hover);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [hover]);
   useEffect(() => {
     init();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const init = () => {
     if (cursor) {
@@ -21,6 +22,7 @@ export default function Cursor() {
   };
   useEffect(() => {
     onMouseMoveEv();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mouse]);
   const onMouseMoveEv = () => {
     if (cursor) {
