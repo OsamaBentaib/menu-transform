@@ -2,7 +2,7 @@
 
 ![Alt text](/Screenshot.png?raw=true "travelout.")
 
-Demo [https://menu-transfer.beosama.com](https://menu-transfer.beosama.com).
+Demo [https://menu-transform.beosama.com](https://menu-transform.beosama.com).
 
 ## Available Scripts
 
